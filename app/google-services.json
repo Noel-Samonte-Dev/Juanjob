@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "878776686292",
+    "firebase_url": "https://juanjob-5e010-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "juanjob-5e010",
+    "storage_bucket": "juanjob-5e010.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878776686292:android:7b0307596d3c072e5e0d41",
+        "android_client_info": {
+          "package_name": "com.juanjob.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqgY65SPiMuR60st_yq3BWnDogl7sjTJ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878776686292:android:c39e71926a13288d5e0d41",
+        "android_client_info": {
+          "package_name": "com.juanjob.juanjob_admin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqgY65SPiMuR60st_yq3BWnDogl7sjTJ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/client_home_page">
+
+    <fragment
+        android:id="@+id/client_home_page"
+        android:name="com.juanjob.app.client.ClientHomePage"
+        android:label="client_logout_page"
+        tools:layout="@layout/client_home_page">
+        <action
+            android:id="@+id/action_client_home_page_to_client_logout_page"
+            app:destination="@id/client_logout_page" />
+        <action
+            android:id="@+id/action_client_home_page_to_client_orders_page"
+            app:destination="@id/client_orders_page" />
+        <action
+            android:id="@+id/action_client_home_page_to_client_profile_page"
+            app:destination="@id/client_profile_page" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/client_logout_page"
+        android:name="com.juanjob.app.client.ClientHomePage"
+        android:label="client_logout_page"
+        tools:layout="@layout/client_home_page">
+        <action
+            android:id="@+id/action_client_logout_page_to_client_profile_page"
+            app:destination="@id/client_profile_page" />
+        <action
+            android:id="@+id/action_client_logout_page_to_client_orders_page"
+            app:destination="@id/client_orders_page" />
+        <action
+            android:id="@+id/action_client_logout_page_to_client_home_page"
+            app:destination="@id/client_home_page" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/client_profile_page"
+        android:name="com.juanjob.app.client.profile.ClientProfilePage"
+        android:label="client_profile_page"
+        tools:layout="@layout/client_profile_page">
+        <action
+            android:id="@+id/action_client_profile_page_to_client_home_page"
+            app:destination="@id/client_logout_page" />
+
+        <action
+            android:id="@+id/action_client_profile_page_to_client_orders_page"
+            app:destination="@id/client_orders_page" />
+        <action
+            android:id="@+id/action_client_profile_page_to_client_home_page2"
+            app:destination="@id/client_home_page" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/client_orders_page"
+        android:name="com.juanjob.app.client.orders.ClientOrdersPage"
+        android:label="client_orders_page"
+        tools:layout="@layout/client_orders_page">
+        <action
+            android:id="@+id/action_client_order_page_to_client_profile_page"
+            app:destination="@id/client_profile_page" />
+
+        <action
+            android:id="@+id/action_client_order_page_to_client_home_page"
+            app:destination="@id/client_logout_page" />
+        <action
+            android:id="@+id/action_client_orders_page_to_client_home_page"
+            app:destination="@id/client_home_page" />
+    </fragment>
+
+</navigation>

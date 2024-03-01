@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/home_page">
+
+    <fragment
+        android:id="@+id/home_page"
+        android:name="com.juanjob.app.customer.home.CustomerHomePage_v2"
+        android:label="home_page"
+        tools:layout="@layout/customer_home_page_v2">
+        <action
+            android:id="@+id/action_home_page_to_profile_page"
+            app:destination="@id/profile_page" />
+        <action
+            android:id="@+id/action_home_page_to_settings_page"
+            app:destination="@id/settings_page" />
+        <action
+            android:id="@+id/action_home_page_to_orders_page"
+            app:destination="@id/orders_page" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profile_page"
+        android:name="com.juanjob.app.customer.profile.CustomerProfilePage"
+        android:label="profile_page"
+        tools:layout="@layout/customer_profile_page">
+        <action
+            android:id="@+id/action_profile_page_to_home_page"
+            app:destination="@id/home_page" />
+        <action
+            android:id="@+id/action_profile_page_to_settings_page"
+            app:destination="@id/settings_page" />
+        <action
+            android:id="@+id/action_profile_page_to_orders_page"
+            app:destination="@id/orders_page" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settings_page"
+        android:name="com.juanjob.app.customer.SettingsPage"
+        android:label="settings_page"
+        tools:layout="@layout/settings_page">
+        <action
+            android:id="@+id/action_settings_page_to_profile_page"
+            app:destination="@id/profile_page" />
+        <action
+            android:id="@+id/action_settings_page_to_home_page"
+            app:destination="@id/home_page" />
+
+        <action
+            android:id="@+id/action_settings_page_to_order_page"
+            app:destination="@id/orders_page" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/orders_page"
+        android:name="com.juanjob.app.customer.orders.CustomerOrdersPage"
+        android:label="settings_page"
+        tools:layout="@layout/settings_page">
+        <action
+            android:id="@+id/action_order_page_to_profile_page"
+            app:destination="@id/profile_page" />
+        <action
+            android:id="@+id/action_order_page_to_settings_page"
+            app:destination="@id/home_page" />
+
+        <action
+            android:id="@+id/action_order_page_to_home_page"
+            app:destination="@id/home_page" />
+    </fragment>
+
+</navigation>

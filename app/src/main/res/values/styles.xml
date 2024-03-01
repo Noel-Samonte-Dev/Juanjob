@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BottomNavigationViewTextStyleActive">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="BottomNavigationViewTextStyleInActive">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="RatingBarColor" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#DCDCDC</item>
+        <item name="colorControlActivated">#F0B221</item>
+    </style>
+
+    <style name="outlined_textfield" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
+
+    <style name="RatingBar_color" parent="Widget.AppCompat.RatingBar">
+        <item name="colorControlNormal">#DCDCDC</item>
+        <item name="colorControlActivated">#F0B221</item>
+    </style>
+
+    <style name="RatingBar_color_small" parent="Widget.AppCompat.RatingBar">
+        <item name="colorControlNormal">#DCDCDC</item>
+        <item name="colorControlActivated">#F0B221</item>
+        <item name="android:maxWidth">15dip</item>
+        <item name="android:maxHeight">15dip</item>
+    </style>
+
+    <style name="RadioButtonStyle" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/blue</item>
+        <item name="colorAccent">@color/blue</item>
+        <item name="android:textColorSecondary">@color/black</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+</resources>
